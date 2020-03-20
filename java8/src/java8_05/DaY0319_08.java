@@ -10,7 +10,7 @@ public class DaY0319_08 {
 		System.out.println("당신의 등급을 입력해주세요. ");
 		
 		String grade = s.next();
-		/*
+		
 		switch(grade){
 			case "S":
 			case "s":
@@ -26,25 +26,9 @@ public class DaY0319_08 {
 				break;
 			default :
 				System.out.println("당신은 일반 고객입니다.");
-		}*/
-		
-		switch(grade){
-			case "a":
-			case "A":
-				System.out.println("당신은 아메리카노입니다.");
-				break;
-			case "c":
-			case "C" :
-				System.out.println("당신은 카푸치노입니다.");
-				break;
-			case "I":
-			case "i" :
-				System.out.println("당신은 카페라떼입니다.");
-				break;
-			case "m":
-			case "M": 
-				System.out.println("당신은 카페 모카입니다.");
 		}
+		
+		
 
 		
 
