@@ -42,13 +42,13 @@ public class Day0319_10 {
 		
 		switch(number) {
 		case 0:
-			com = "가위";
+			com = ga;
 			break;
 		case 1:
-			com = "바위";
+			com = ba;
 			break;
 		case 2:
-			com = "보";
+			com = bo;
 			break;
 		}
 		if((user == "가위" && com == "보") || (user == "바위" && com == "가위") || (user == "보" && com == "바위")) {
@@ -56,7 +56,7 @@ public class Day0319_10 {
 		}else if((com == "가위" && user == "보") || (com == "바위" && user == "가위") || (com == "보" && user == "바위")) {
 			System.out.println("compuet 승! 사람 : " + user + ", 컴퓨터 : "+ com);
 		}else System.out.println("무승부! 사람 : " + user + ", 컴퓨터 : " + com);
-		
+		// 자바에서 문자열을 비교하기위해서는 변수.equals(값) 를 사용해야한다. 
 	}
 
 }
