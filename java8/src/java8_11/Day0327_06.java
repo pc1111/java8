@@ -18,12 +18,14 @@ public class Day0327_06 {
 		}
 		
 		int count=6;
+		int arry[] = new int[6];
 		System.out.println("- ´ç Ã· ¹ø È£ -");
 		for(int i = 0 ; i < arr.length;i++)
 		{
 			if(arr[i] == 1)
 			{
 				System.out.print((i+1) + "\t");
+				
 				count--;
 			}
 			if(count == 0)
