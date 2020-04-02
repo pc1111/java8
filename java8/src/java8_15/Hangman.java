@@ -26,11 +26,11 @@ public class Hangman {
 
 		int temp = 0;
 		int count = remainder;
-		
+
 		int i = 0;
-		
+
 		while (count >= 0) {
-			
+
 			count--;
 			if ((player.charAt(0)) == (inputString.charAt(i))) {
 				outputString.deleteCharAt(i);
@@ -41,11 +41,8 @@ public class Hangman {
 			} else {
 				i += 1;
 			}
-
-			
 		}
-		
-		
+
 		if (temp == 0)
 			failed--;
 		show();
@@ -56,14 +53,14 @@ public class Hangman {
 		} else {
 			return failed;
 		}
-		
+
 	}
-	
+
 	private void show() {
-		System.out.println("남아있는 라이프 : "+failed);
+		System.out.println("남아있는 라이프 : " + failed);
 		System.out.println(outputString);
 	}
-	
+
 	private int cheak() {
 		int count = 0;
 		for (int i = 0; i < remainder; i++) {
@@ -73,10 +70,9 @@ public class Hangman {
 		}
 		return count;
 	}
-	
+
 	public void ready() {
-		
 		System.out.println("문자를 입력해주세요");
 	}
-	
+
 }
