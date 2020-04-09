@@ -11,6 +11,7 @@ public class Day0325_03 {
 		
 		int a;
 		int f,c;
+		
 		while(true)
 		{	
 			f = (int)(Math.random()*8) +2;

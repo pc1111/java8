@@ -1,4 +1,4 @@
-package java9_10;
+package java8_10;
 
 import java.util.Arrays;
 

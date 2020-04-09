@@ -1,4 +1,4 @@
-package java9_10;
+package java8_10;
 
 public class Day0326_03 {
 
@@ -24,7 +24,7 @@ public class Day0326_03 {
 		System.out.println("배열의 개수 : " + arr2.length); // length는 배열으 크기를 출력
 		
 		int[] arr3 = {10, 20, 30, 40, 50};
-		for(int i=0; i<5; i++) {
+		for(int i=0; i<arr3.length; i++) {
 			System.out.println(arr3[i]);
 		}
 

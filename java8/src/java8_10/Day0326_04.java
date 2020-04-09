@@ -1,4 +1,4 @@
-package java9_10;
+package java8_10;
 
 public class Day0326_04 {
 

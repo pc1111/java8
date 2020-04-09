@@ -1,0 +1,59 @@
+package java8_17;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class HashMapEx {
+
+	public static void main(String[] args) {
+		Map<String, Integer> map = new HashMap<>();
+		map.put("국어", 80);
+		map.put("영어", 90);
+		map.put("수학", 79);
+		map.put("과학", 84);
+
+		System.out.println(map.containsKey("국어"));
+		System.out.println(map.containsValue(90));
+		System.out.println(map.isEmpty());
+		
+		Set<String> keySet = map.keySet();
+		for(String key : keySet) {
+			System.out.println(key + " : " + map.get(key));
+		}
+		System.out.println();
+		map.put("과학", 80);
+		keySet = map.keySet();
+		for(String key : keySet) {
+			System.out.println(key + " : " + map.get(key));
+		}
+		
+		Set<Entry<String, Integer>> entrySet = map.entrySet();
+		Iterator<Entry<String, Integer>> iterator = entrySet.iterator();
+		while(iterator.hasNext()) {
+			Entry<String, Integer> entry = iterator.next();
+			String key = entry.getKey();
+			int score = entry.getValue();
+			System.out.println(key + " : " + score);
+		}
+		
+		int num = map.remove("수학");
+		System.out.println(num);
+		System.out.println();
+		
+		keySet = map.keySet();
+		for(String key : keySet) {
+			System.out.println(key + " : " + map.get(key));
+		}
+		
+		boolean isEntry = map.remove("과학",80);
+		System.out.println(isEntry);
+		keySet = map.keySet();
+		for(String key : keySet) {
+			System.out.println(key + " : " + map.get(key)); 
+		}
+ 	}
+
+}

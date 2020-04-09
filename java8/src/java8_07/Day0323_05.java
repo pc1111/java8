@@ -11,6 +11,7 @@ public class Day0323_05 {
 			sum += i;
 			add++;
 		}
+		
 		System.out.println("1에서 50까지의 수 중에 3의 배수의 합 :" + sum);
 		
 		
